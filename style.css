@@ -23,20 +23,20 @@
 }
 .box{
     font-size:40px;   font-weight: bold;
-    text-align: center;  /*line-height: 300px; */
+    text-align: center;  
     color:rgb(3, 3, 3);
 } 
 .firstEle1{
     background:rgb(240, 32, 32);
-    /* grid-column:cal-s 2/cal-e 2;  */
-    /* grid-row:hs/he; */
+    grid-column:cal-s 2/cal-e 2; 
+    grid-row:hs/he;
   
 
 }
 .firstEle2{
     background:rgb(56, 32, 240);
-    /* grid-column:cal-s 1/ cal-e 1; */
-    /* grid-row:hs/he; */
+    grid-column:cal-s 2/ cal-e 2;
+    grid-row:bs/ce;
     
 }
 .firstEle3{
@@ -50,18 +50,17 @@
 }
 .firstEle5{
     background:rgb(241, 119, 20);
-    /* grid-column: cal-s 3/cal-e 3;*/ /* start from 3rd column and end at 3rd calumn */
-    /* grid-row:bs/ce; */
+    grid-column: cal-s 1/cal-e 1;
+    grid-row:ms/ce;
     
 }
 .firstEle6{
     background:rgba(0, 242, 255, 0.876);
-    /* grid-column: cal-s 1/cal-e 2; */ /*start from 1st column and end at 2rd calumn */
-    
+    grid-column: cal-s 2/cal-e 3;  
 }
 .firstEle7{
     background:rgba(202, 228, 7, 0.876);
-    /* grid-column: cal-s 1 /cal-e 3; */
+    grid-column: cal-s 1 /cal-e 3;
 }
 /* ==========================first box end ============================= */
 
