@@ -1,103 +1,51 @@
-*{margin:0;   padding:0;}
- .parant{
+*{ margin:0; padding:0;}
+
+.parent{
      height:100vh; width:100vw;
-     display:grid; align-content: center;
+     display: grid; align-content: center;
     justify-content: center;
- } 
+}
 .container{
-    width:1550px; display: grid;  grid-gap:20px;
-    grid-template-rows:[hs] 120px [he ms] 60px [me bs]  
-      120px [be cs] 400px [ce fs] 50px [fe];
-    grid-template-columns: repeat(3,[cal-s]1fr[cal-e]);
- }
+    width:1550px; 
+    display: grid;
+    grid-template-rows:120px 60px 120px  400px 50px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px; 
+    grid-template-areas:"header header header"
+                        "menubar menubar menubar"
+                        "box1 box2 sideber"
+                        "contentber contentber sideber"
+                        "foter foter foter" ; 
+}
 .box{
     font-size:40px; font-weight: bold; text-align: center;  
-    color: rgb(3, 3, 3);} 
-
-.firstEle1{
-    background:rgb(240, 32, 32);
-    grid-column: cal-s 2/cal-e 2; /* star column 2 and end column 2*/ 
-    grid-row: hs / he;
-}
-.firstEle2{
-    background:rgb(56, 32, 240);
-    grid-column:cal-s 2/ cal-e 2;
-    grid-row:bs/ce;
- }
-.firstEle3{
-    background:rgb(32, 240, 108);
-  }
-.firstEle4{
-    background:rgb(137, 6, 144);
-}
-.firstEle5{
-    background:rgb(241, 119, 20);
-    grid-column: cal-s 1/cal-e 1;
-    grid-row:ms/ce;
-    
-}
-.firstEle6{
-    background:rgba(0, 242, 255, 0.876);
-    grid-column: cal-s 2/cal-e 3;  
-}
-.firstEle7{
-    background:rgba(202, 228, 7, 0.876);
-    grid-column: cal-s 1 /cal-e 3;
-}
-
-/* ==========================first box end ============================= */
-/*
-.parant2{
-    height:100vh;
-   width:100vw;
-    display:grid; 
-   align-content: center;
-   justify-content: center;
+    color: rgb(3, 3, 3);
 } 
-
-.container2{
-    height: 619px; 
-    width:1550px; 
-    display:grid;
-    grid-template-rows:[hs] 120px [he ms] 60px [me bs] 120px [be cs] 400px [ce fs] 50px [fe];
-    
-    grid-template-columns: repeat(3,[cal-s]1fr[cal-e]);
-    grid-gap:20px; 
+.header{
+    background: rgb(240, 32, 32);
+    grid-area:header;
 }
-.firstEle8{
-    background:rgb(240, 32, 32);
-    grid-column:cal-s 1/cal-e 3; start from 1st column and end at 3rd calumn 
-    grid-row:hs/he;
-  
-
-}
-.firstEle9{
+.menu{
     background:rgb(56, 32, 240);
-    grid-column:cal-s 1/ cal-e 3;
-    grid-row:ms/me;
-    
+    grid-area:menubar;
 }
-.firstEle10{
+.box1{
     background:rgb(32, 240, 108);
-   
+    grid-area: box1;
 }
-.firstEle11{
+.box2{
     background:rgb(137, 6, 144);
-   
-    
+    grid-area: box2;
 }
-.firstEle12{
+.sideber{
     background:rgb(241, 119, 20);
-    grid-column: cal-s 3/cal-e 3;  start from 3rd column and end at 3rd calumn
-    grid-row:bs/ce;
-    
+    grid-area: sideber;
 }
-.firstEle13{
+.content{
     background:rgba(0, 242, 255, 0.876);
-    grid-column: cal-s 1/cal-e 2;  /*start from 1st column and end at 2rd calumn 
-    
+    grid-area: contentber; 
 }
-.firstEle14{
+.foter{
     background:rgba(202, 228, 7, 0.876);
-    grid-column: cal-s 1 /cal-e 3;
-}*/
+    grid-area: foter;
+}
