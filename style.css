@@ -8,44 +8,41 @@
 .container{
     width:1550px; 
     display: grid;
-    grid-template-rows:120px 60px 120px  400px 50px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:300px 300px;
+    grid-template-columns: repeat(2,1fr);
     grid-gap:20px; 
-    grid-template-areas:"header header header"
-                        "menubar menubar menubar"
-                        "box1 box2 sideber"
-                        "contentber contentber sideber"
-                        "foter foter foter" ; 
+    /* grid-auto-rows:200px; */
+    grid-auto-columns: 300px;
+    grid-auto-flow: column;
+    
 }
 .box{
     font-size:40px; font-weight: bold; text-align: center;  
     color: rgb(3, 3, 3);
 } 
-.header{
-    background: rgb(240, 32, 32);
-    grid-area:header;
-}
-.menu{
-    background:rgb(56, 32, 240);
-    grid-area:menubar;
-}
 .box1{
-    background:rgb(32, 240, 108);
-    grid-area: box1;
+    background: rgb(240, 32, 32);
+   ;
 }
 .box2{
+    background:rgb(56, 32, 240);
+    
+}
+.box3{
+    background:rgb(32, 240, 108);
+}
+.box4{
     background:rgb(137, 6, 144);
-    grid-area: box2;
 }
-.sideber{
+.box5{
     background:rgb(241, 119, 20);
-    grid-area: sideber;
+    
 }
-.content{
+.box6{
     background:rgba(0, 242, 255, 0.876);
-    grid-area: contentber; 
+    
 }
-.foter{
+.box7{
     background:rgba(202, 228, 7, 0.876);
-    grid-area: foter;
+
 }
