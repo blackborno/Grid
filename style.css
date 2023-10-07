@@ -6,15 +6,14 @@
     justify-content: center;
 }
 .container{
-    width:1550px; 
-    display: grid;
+    background: rgb(86, 81, 81);
+    width:1550px; display: grid;
     grid-template-rows:300px 300px;
     grid-template-columns: repeat(2,1fr);
     grid-gap:20px; 
-    /* grid-auto-rows:200px; */
-    grid-auto-columns: 300px;
-    grid-auto-flow: column;
-    
+    align-items: center; 
+/* place-items: align-items justify-items; short hand*/ 
+ /*value = start / end / center/ stretch (default value)*/
 }
 .box{
     font-size:40px; font-weight: bold; text-align: center;  
@@ -22,27 +21,21 @@
 } 
 .box1{
     background: rgb(240, 32, 32);
-   ;
+    /* align-self: center;  */
+    /* justify-self: end;  */
+   /*value = start / end / center/ strech (default value)*/
+  /*  place-self: center end*/ ;
 }
-.box2{
-    background:rgb(56, 32, 240);
-    
-}
-.box3{
-    background:rgb(32, 240, 108);
-}
-.box4{
-    background:rgb(137, 6, 144);
-}
-.box5{
-    background:rgb(241, 119, 20);
-    
-}
-.box6{
-    background:rgba(0, 242, 255, 0.876);
-    
-}
-.box7{
-    background:rgba(202, 228, 7, 0.876);
 
-}
+.box2{
+    background:rgb(56, 32, 240);}
+.box3{
+    background:rgb(32, 240, 108);}
+.box4{
+    background:rgb(137, 6, 144);}
+.box5{
+    background:rgb(241, 119, 20);}
+.box6{
+    background:rgba(0, 242, 255, 0.876);}
+.box7{
+    background:rgba(202, 228, 7, 0.876)}
